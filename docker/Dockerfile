@@ -14,14 +14,7 @@ COPY ./docker/apache.conf /etc/apache2/sites-available/000-default.conf
 
 ENV APP_ENV=prod
 
-RUN rm -rf /var/www/vendor && \
-    rm -rf /var/www/.git && \
-    rm -rf /var/www/.env.local && \
-    cd /var/www && \
-    composer install && \
-    php bin/console cache:clear && \
-    php bin/console cache:warmup && \
-    chown -R www-data:www-data /var/www
+RUN chown -R www-data:www-data /var/www
 
 WORKDIR /var/www/
 
