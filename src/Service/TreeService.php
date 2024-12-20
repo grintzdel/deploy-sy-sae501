@@ -7,7 +7,7 @@ use Rubix\ML\Datasets\Unlabeled;
 class TreeService
 {
     private mixed $model;
-    const PATH_MODEL_TREE = __DIR__ . '/../../public/model_tree.rbx';
+    const PATH_MODEL_TREE = __DIR__ . '/../../models/model_tree.rbx';
 
     public function __construct()
     {

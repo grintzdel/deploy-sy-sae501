@@ -7,7 +7,7 @@ use Rubix\ML\Datasets\Unlabeled;
 class MlpService
 {
     private mixed $model;
-    const PATH_MODEL_MLP = __DIR__ . '/../../public/model_mlp.rbx';
+    const PATH_MODEL_MLP = __DIR__ . '/../../models/model_mlp.rbx';
 
     public function __construct()
     {
